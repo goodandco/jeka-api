@@ -1,6 +1,6 @@
 const path = require('path');
 const app = require(path.resolve(__dirname, '../server/server'));
-const ds = app.datasources.mysql;
+const ds = app.datasources.asteriskDb;
 
 ds.automigrate('users', err => {
   if (err) throw err;
@@ -35,6 +35,7 @@ ds.automigrate('users', err => {
       count--;
       if (count === 0)
         ds.disconnect();
+      process.exit(0);
     });
   });
 });
