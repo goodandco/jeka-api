@@ -4,20 +4,20 @@
     "connector": "memory"
   },
   "asteriskDb": {
-    "host": "jeka-mysql-asterisk",
+    "host": "jeka-asteriskdb",
     "port": 3306,
     "database": "asteriskdb",
-    "username": "root",
-    "password": "root",
+    "username": "user123",
+    "password": "user123",
     "name": "asteriskDb",
     "connector": "mysql"
   },
   "mikbillDb": {
-    "host": "jeka-mysql-mikbill",
+    "host": "jeka-mikbilldb",
     "port": 3306,
     "database": "mikbill",
-    "username": "root",
-    "password": "root",
+    "username": "user123",
+    "password": "user123",
     "name": "mikbillDb",
     "connector": "mysql"
   }

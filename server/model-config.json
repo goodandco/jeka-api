@@ -18,7 +18,7 @@
     "public": false
   },
   "users": {
-    "dataSource": "asteriskDb",
+    "dataSource": "mikbillDb",
     "public": true
   }
 }

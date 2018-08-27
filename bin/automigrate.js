@@ -1,6 +1,6 @@
 const path = require('path');
 const app = require(path.resolve(__dirname, '../server/server'));
-const ds = app.datasources.asteriskDb;
+const ds = app.datasources.mikbillDb;
 
 ds.automigrate('users', err => {
   if (err) throw err;
@@ -26,16 +26,15 @@ ds.automigrate('users', err => {
 
   let count = users.length;
 
-  users.forEach(user => {
+  users.forEach((user, index) => {
     app.models.users.create(user, (err, model) => {
       if (err) throw err;
 
       console.log('Created:', model);
 
-      count--;
-      if (count === 0)
+      if (index === count - 1 ) {
         ds.disconnect();
-      process.exit(0);
+      }
     });
   });
 });
