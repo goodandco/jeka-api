@@ -6,18 +6,18 @@
   "asteriskDb": {
     "host": "${ASTERISK_DB_HOST}",
     "port": 3306,
-    "database": "asteriskdb",
-    "username": "user123",
-    "password": "user123",
+    "database": "${ASTERISK_DB_NAME}",
+    "username": "${ASTERISK_DB_USER}",
+    "password": "${ASTERISK_DB_PASSWORD}",
     "name": "asteriskDb",
     "connector": "mysql"
   },
   "mikbillDb": {
     "host": "${MIKBILL_DB_HOST}",
     "port": 3306,
-    "database": "mikbill",
-    "username": "user123",
-    "password": "user123",
+    "database": "${MIKBILL_DB_NAME}",
+    "username": "${MIKBILL_DB_USER}",
+    "password": "${MIKBILL_DB_PASSWORD}",
     "name": "mikbillDb",
     "connector": "mysql"
   }
