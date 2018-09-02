@@ -15,6 +15,12 @@
     "address": {
       "type": "string"
     },
+    "debit": {
+      "type": "string"
+    },
+    "credit": {
+      "type": "string"
+    },
     "fio": {
       "type": "string"
     },

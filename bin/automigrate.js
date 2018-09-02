@@ -11,6 +11,8 @@ ds.automigrate('users', err => {
       phone: '0501111222',
       fio: 'Lokh Ivan Fedorovich',
       address: 'm. Dnipro, v. Lenina 23',
+      debit: 100,
+      credit: 0,
       createdAt: new Date(),
       lastModifiedAt: new Date()
     },
@@ -19,6 +21,8 @@ ds.automigrate('users', err => {
       phone: '0501112222',
       fio: 'Doe John Ololoevich',
       address: 'm. Dnipro, v. Lenina 24',
+      debit: 0,
+      credit: 100,
       createdAt: new Date(),
       lastModifiedAt: new Date()
     }
